@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD API RES AXIOS</title>
+</head>
+<body>
+    <h1>CRUD API RES AXIOS</h1>
+    <section class="crud">
+        <article>
+            <h2 class="crud-title">Agregar Santo</h2>
+            <form class="crud-form">
+                <input type="text" name="nombre" placeholder="Nombre" required><br>
+                <input type="text" name="constelacion" placeholder="Constelacion" required><br>
+                <input type="submit" value="Enviar">
+                <input type="hidden" name="id">
+            </form>
+        </article>
+        <article>
+            <h2></h2>
+            <table class="crud-table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Constelacion</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+            </table>
+        </article>
+    </section>
+    <template id="crud-template">
+        <tr>
+            <td class="name"></td>
+            <td class="constellation"></td>
+            <td>
+                <buttom class="edit">Enviar</buttom>
+                <buttom class="delete">Eliminar</buttom>
+            </td>
+        </tr>
+    </template>
+
+    <script>
+
+        const d = document,
+            $table = d.querySelector(".crud-table"),
+            $form = d.querySelector(".crud-form"),
+            $title = d.querySelector(".crud-title"),
+            $template = d.getElementById("crud-template").content,
+            $fragmanto = d.createDocumentFragment();
+
+        
+
+
+    </script>
+    
+</body>
+</html>
