@@ -11,11 +11,6 @@
       "constelacion": "Dragon"
     },
     {
-      "id": 3,
-      "nombre": "hyoga",
-      "constelacion": "Cisne"
-    },
-    {
       "id": 4,
       "nombre": "Shun",
       "constelacion": "Andromeda"
@@ -24,6 +19,16 @@
       "id": 5,
       "nombre": "Ikki",
       "constelacion": "Fenix"
+    },
+    {
+      "nombre": "hyoga",
+      "constelacion": "Cisne",
+      "id": 6
+    },
+    {
+      "nombre": "andres",
+      "constelacion": "Tauro",
+      "id": 7
     }
   ],
   "dioses": [
