@@ -93,7 +93,7 @@
                                     constelacion: e.target.contelacion.value
                                 })
                             },
-                            res = await fetch("http://localhost:3000/santos",options),
+                            res = await axios("http://localhost:3000/santos",options),
                             json = await res.data;
                             location.reload();
                     } catch (err) {
@@ -113,7 +113,7 @@
                                     constelacion: e.target.contelacion.value
                                 })
                             },
-                            res = await fetch(`http://localhost:3000/santos/${e.target.id.value}`,options),
+                            res = await axios(`http://localhost:3000/santos/${e.target.id.value}`,options),
                             json = await res.data;
                             location.reload();
                     } catch (err) {
@@ -144,8 +144,8 @@
                                 }
                                 
                             },
-                            res = await fetch(`http://localhost:3000/santos/${e.target.dataset.id}`,options),
-                            json = await res.json();
+                            res = await axios(`http://localhost:3000/santos/${e.target.dataset.id}`,options),
+                            json = await res.data;
                                 
                         location.reload();                          
 
